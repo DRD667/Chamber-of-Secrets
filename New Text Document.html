@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2nd June 2024</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 1rem;
+        padding: 0;
+        background-color: #f0f0f0;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        align-content: center;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        min-height: 70vh;
+        display: none; 
+    }
+    iframe {
+        width: 100%;
+        min-height: 60vh;
+        border: none;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        
+    }
+</style>
+</head>
+<body>
+<div class="container" id="content">
+    <h1>Welcome to the chamber of secret messages for Daylight</h1>
+    <p></p>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vSxuIWKdVIuRN74EssCxYXnNNQ29fx7SDI7HAv0ijLGI9BfmUNVW0WSZr410-8MBtlqkXZgMkz3xRQX/pub?embedded=true"></iframe>
+</div>
+
+<script>
+    // Function to prompt for password
+    function getPassword() {
+        var password = prompt("Please enter the password:");
+        if (password === "0411DRD") {
+            document.getElementById("content").style.display = "block"; 
+        } else {
+            alert("Incorrect password. Please try again."); 
+        }
+    }
+
+    // Call getPassword function when the page loads
+    window.onload = getPassword;
+</script>
+</body>
+</html>
